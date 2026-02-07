@@ -450,17 +450,19 @@ body {
 
 /* Visual del PC */
 .hero-visual {
-    flex: 0 0 450px;
+    flex: 0 0 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     animation: fadeIn 1.5s ease;
+    padding-top: 40px;
+    margin-left: -20px;
 }
 
 .pc-preview {
     position: relative;
-    width: 350px;
-    height: 450px;
+    width: 320px;
+    height: 400px;
 }
 
 .pc-case {
@@ -1521,6 +1523,21 @@ section {
     color: var(--neon-cyan);
 }
 
+.footer-disabled {
+    color: var(--text-muted);
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.footer-links .footer-disabled {
+    display: block;
+    padding: var(--space-xs) 0;
+}
+
+.footer-legal .footer-disabled {
+    font-size: 0.9rem;
+}
+
 /* ============================================
    MODAL
    ============================================ */
@@ -1742,13 +1759,13 @@ section {
     
     .hero-visual {
         margin-left: 0;
-        padding-right: 0;
+        padding-top: 0;
         justify-content: center;
     }
     
     .pc-preview {
-        width: 300px;
-        height: 380px;
+        width: 280px;
+        height: 350px;
     }
 }
 

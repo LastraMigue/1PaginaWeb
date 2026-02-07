@@ -277,8 +277,8 @@ const GAMES_DATA = [
     },
     {
         id: 'cod',
-        name: 'Call of Duty: MW3',
-        image: 'https://placehold.co/400x200/1a1a2e/ff6b35?text=Call+of+Duty&font=orbitron',
+        name: 'Call of Duty: Black Ops 6',
+        image: 'https://placehold.co/400x200/1a1a2e/ff6b35?text=Call+of+Duty+BO6&font=orbitron',
         genre: 'Shooter FPS'
     },
     {
@@ -390,7 +390,7 @@ function calculateBuildPrice(componentIds) {
 function calculateBuildPerformance(componentIds) {
     let totalPerformance = 0;
     let count = 0;
-
+    
     for (const [category, id] of Object.entries(componentIds)) {
         const component = getComponentById(category, id);
         if (component && component.performance) {
@@ -400,7 +400,7 @@ function calculateBuildPerformance(componentIds) {
             count += weight;
         }
     }
-
+    
     return count > 0 ? (totalPerformance / count).toFixed(1) : 0;
 }
 
@@ -408,9 +408,9 @@ function calculateBuildPerformance(componentIds) {
 function calculateValueScore(componentIds) {
     const totalPrice = calculateBuildPrice(componentIds);
     const performance = parseFloat(calculateBuildPerformance(componentIds));
-
+    
     if (totalPrice === 0) return 0;
-
+    
     // Fórmula: (rendimiento / precio) * factor de escala
     // Un build de 750€ con rendimiento 6 = 90% calidad-precio
     const valueRatio = (performance / totalPrice) * 1000;

@@ -112,3 +112,67 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
 - Al cargar la página, **el scroll baja automáticamente al final**
 - El contenido inicial no está correctamente alineado
 - El logotipo invade el espacio del texto
+
+### Cambios Solicitados
+
+- Evitar cualquier **scroll automático** al cargar la web  
+  → La página debe comenzar **siempre desde arriba**
+
+- Centrar mejor el bloque:
+  - Título **“Construye tu leyenda”**
+  - Texto introductorio
+
+- Desplazar el **logotipo hacia la derecha**
+  - Sin que se superponga con el texto
+  - Manteniendo una separación clara y estable
+  - Sin que los elementos se monten al redimensionar la pantalla
+
+---
+
+## Prompt Terciario – Ajustes Finales y Reglas de Funcionamiento
+
+### Gestión de Enlaces
+
+- **Footer**
+  - Todos los enlaces de la parte inferior **NO deben funcionar**
+  - **Únicamente** deben estar activos los enlaces del apartado **“Enlaces rápidos”**
+  - El resto de enlaces:
+    - No deben redirigir
+    - No deben lanzar errores
+    - No deben ejecutar ninguna acción
+
+### Cambios de Texto Obligatorios
+
+- Sustituir el texto:
+  - `Call of duty` → **Call of Duty: Black Ops 6**
+- Sustituir el texto:
+  - `Exportar PDF` → **Exportar TXT**
+
+### Reglas del Configurador (Lógica Obligatoria)
+
+- **Selección completa obligatoria**
+  - Todos los componentes deben estar seleccionados para:
+    - Comprar el PC
+    - Exportar el archivo TXT
+    - Mostrar la puntuación de rendimiento
+    - Calcular y mostrar la barra Calidad–Precio
+
+- **Restricciones**
+  - No se permiten resultados parciales
+  - No se permiten cálculos incompletos
+  - No se permite exportación sin selección total
+
+- **Feedback al usuario**
+  - Botones de acción deshabilitados si falta algún componente
+  - Mensaje visual claro indicando qué falta por seleccionar
+
+### Ajustes Visuales de Inicio
+
+- **Logotipo principal**
+  - Reubicar el logotipo:
+    - Ligeramente más **a la izquierda**
+    - Ligeramente más **arriba**
+  - Condiciones:
+    - No debe solaparse con el texto
+    - No debe montarse con el título **“Construye tu leyenda”**
+    - Debe mantenerse estable en todos los tamaños de pantalla
