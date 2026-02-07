@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS BUILDS | Montaje de PCs Gaming a Medida</title>
+    <meta name="description"
+        content="Configura y compra tu PC gaming perfecto. Desde gama entrada hasta ultra entusiasta. El mejor precio-calidad del mercado.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Canvas para efecto de partículas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Sticky -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">NEXUS<span class="logo-accent">BUILDS</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#olimpo" class="nav-link">El Olimpo</a></li>
+                    <li class="dropdown">
+                        <a href="#configurador" class="nav-link dropdown-toggle">
+                            Configurador
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#configurador" data-category="cpu">Procesadores</a></li>
+                            <li><a href="#configurador" data-category="gpu">Tarjetas Gráficas</a></li>
+                            <li><a href="#configurador" data-category="ram">Memoria RAM</a></li>
+                            <li><a href="#configurador" data-category="storage">Almacenamiento</a></li>
+                            <li><a href="#configurador" data-category="psu">Fuentes de Poder</a></li>
+                            <li><a href="#configurador" data-category="case">Torres/Cajas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#fps-comparator" class="nav-link">Comparador FPS</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-badge">⚡ NUEVA GENERACIÓN 2025</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">CONSTRUYE</span><br>
+                <span class="outline-text">TU LEYENDA</span>
+            </h1>
+            <p class="hero-description">
+                Configura tu PC gaming perfecto con componentes de élite.
+                Desde el primer frame hasta la victoria final,
+                <strong>Nexus Builds</strong> te lleva al siguiente nivel.
+            </p>
+            <div class="hero-cta">
+                <a href="#configurador" class="btn btn-primary">
+                    <span class="btn-glow"></span>
+                    Configurar Ahora
+                </a>
+                <a href="#olimpo" class="btn btn-secondary">Ver Builds Preconfigurados</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">PCs Entregados</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.9★</span>
+                    <span class="stat-label">Valoración Media</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Envío Express</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pc-preview">
+                <div class="pc-case">
+                    <div class="pc-glow"></div>
+                    <div class="pc-components">
+                        <div class="component gpu"></div>
+                        <div class="component cpu"></div>
+                        <div class="component ram"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Olimpo del Hardware - Ranking Section -->
+    <section class="olimpo" id="olimpo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🏆 RANKING</span>
+                <h2 class="section-title">El <span class="gradient-text">Olimpo</span> del Hardware</h2>
+                <p class="section-subtitle">Las configuraciones pre-optimizadas por nuestros expertos</p>
+            </div>
+
+            <div class="builds-grid">
+                <!-- Gama Entrada -->
+                <div class="build-card entry" data-tier="entry">
+                    <div class="build-header">
+                        <span class="build-badge">GAMA ENTRADA</span>
+                        <div class="build-image">
+                            <img src="https://placehold.co/400x300/1a1a2e/00d4ff?text=PC+Starter&font=orbitron"
+                                alt="PC Starter">
+                        </div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-name">Starter <span class="highlight">Nova</span></h3>
+                        <ul class="build-specs">
+                            <li><span class="spec-icon">🖥</span> AMD Ryzen 5 5600</li>
+                            <li><span class="spec-icon">🎮</span> RTX 4060 8GB</li>
+                            <li><span class="spec-icon">💾</span> 16GB DDR4 3200MHz</li>
+                            <li><span class="spec-icon">💿</span> SSD 500GB NVMe</li>
+                            <li><span class="spec-icon">⚡</span> Fuente 550W 80+ Bronze</li>
+                        </ul>
+                        <div class="build-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Rendimiento</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="metric-value">6.0/10</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Precio/Calidad</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill quality" style="width: 90%"></div>
+                                </div>
+                                <span class="metric-value">9.0/10</span>
+                            </div>
+                        </div>
+                        <div class="build-footer">
+                            <div class="build-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price-value">749€</span>
+                            </div>
+                            <button class="btn btn-small btn-select-build" data-build="starter">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gama Media -->
+                <div class="build-card mid featured" data-tier="mid">
+                    <div class="featured-badge">⭐ MÁS VENDIDO</div>
+                    <div class="build-header">
+                        <span class="build-badge">GAMA MEDIA</span>
+                        <div class="build-image">
+                            <img src="https://placehold.co/400x300/1a1a2e/ff6b35?text=PC+Gaming&font=orbitron"
+                                alt="PC Gaming">
+                        </div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-name">Gaming <span class="highlight">Titan</span></h3>
+                        <ul class="build-specs">
+                            <li><span class="spec-icon">🖥</span> Intel i5-14600K</li>
+                            <li><span class="spec-icon">🎮</span> RTX 4070 Super 12GB</li>
+                            <li><span class="spec-icon">💾</span> 32GB DDR5 5600MHz</li>
+                            <li><span class="spec-icon">💿</span> SSD 1TB NVMe Gen4</li>
+                            <li><span class="spec-icon">⚡</span> Fuente 750W 80+ Gold</li>
+                        </ul>
+                        <div class="build-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Rendimiento</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="metric-value">8.0/10</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Precio/Calidad</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill quality" style="width: 85%"></div>
+                                </div>
+                                <span class="metric-value">8.5/10</span>
+                            </div>
+                        </div>
+                        <div class="build-footer">
+                            <div class="build-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price-value">1.299€</span>
+                            </div>
+                            <button class="btn btn-small btn-select-build" data-build="gaming">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ultra Entusiasta -->
+                <div class="build-card ultra" data-tier="ultra">
+                    <div class="build-header">
+                        <span class="build-badge">ULTRA ENTUSIASTA</span>
+                        <div class="build-image">
+                            <img src="https://placehold.co/400x300/1a1a2e/ff00ff?text=PC+Extreme&font=orbitron"
+                                alt="PC Extreme">
+                        </div>
+                    </div>
+                    <div class="build-content">
+                        <h3 class="build-name">Extreme <span class="highlight">Overlord</span></h3>
+                        <ul class="build-specs">
+                            <li><span class="spec-icon">🖥</span> AMD Ryzen 9 7950X3D</li>
+                            <li><span class="spec-icon">🎮</span> RTX 4090 24GB</li>
+                            <li><span class="spec-icon">💾</span> 64GB DDR5 6400MHz</li>
+                            <li><span class="spec-icon">💿</span> SSD 2TB NVMe Gen5</li>
+                            <li><span class="spec-icon">⚡</span> Fuente 1000W 80+ Titanium</li>
+                        </ul>
+                        <div class="build-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Rendimiento</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="metric-value">10/10</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Precio/Calidad</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill quality" style="width: 70%"></div>
+                                </div>
+                                <span class="metric-value">7.0/10</span>
+                            </div>
+                        </div>
+                        <div class="build-footer">
+                            <div class="build-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price-value">3.499€</span>
+                            </div>
+                            <button class="btn btn-small btn-select-build" data-build="extreme">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configurador Maestro -->
+    <section class="configurador" id="configurador">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">⚙️ CONFIGURADOR</span>
+                <h2 class="section-title">Configurador <span class="gradient-text">Maestro</span></h2>
+                <p class="section-subtitle">Construye tu PC pieza a pieza. Selecciona cada componente y ve el precio y
+                    rendimiento en tiempo real.</p>
+            </div>
+
+            <div class="configurator-layout">
+                <!-- Panel de Componentes -->
+                <div class="components-panel">
+                    <!-- CPU -->
+                    <div class="component-section" id="cpu-section">
+                        <div class="component-header">
+                            <span class="component-icon">🖥</span>
+                            <h3>Procesador</h3>
+                            <span class="component-status" id="cpu-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="cpu-options"></div>
+                    </div>
+
+                    <!-- GPU -->
+                    <div class="component-section" id="gpu-section">
+                        <div class="component-header">
+                            <span class="component-icon">🎮</span>
+                            <h3>Tarjeta Gráfica</h3>
+                            <span class="component-status" id="gpu-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="gpu-options"></div>
+                    </div>
+
+                    <!-- RAM -->
+                    <div class="component-section" id="ram-section">
+                        <div class="component-header">
+                            <span class="component-icon">💾</span>
+                            <h3>Memoria RAM</h3>
+                            <span class="component-status" id="ram-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="ram-options"></div>
+                    </div>
+
+                    <!-- Storage -->
+                    <div class="component-section" id="storage-section">
+                        <div class="component-header">
+                            <span class="component-icon">💿</span>
+                            <h3>Almacenamiento</h3>
+                            <span class="component-status" id="storage-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="storage-options"></div>
+                    </div>
+
+                    <!-- PSU -->
+                    <div class="component-section" id="psu-section">
+                        <div class="component-header">
+                            <span class="component-icon">⚡</span>
+                            <h3>Fuente de Poder</h3>
+                            <span class="component-status" id="psu-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="psu-options"></div>
+                    </div>
+
+                    <!-- Case -->
+                    <div class="component-section" id="case-section">
+                        <div class="component-header">
+                            <span class="component-icon">🖱</span>
+                            <h3>Torre / Caja</h3>
+                            <span class="component-status" id="case-status">No seleccionado</span>
+                        </div>
+                        <div class="component-options" id="case-options"></div>
+                    </div>
+                </div>
+
+                <!-- Panel de Resumen (Sticky) -->
+                <div class="summary-panel">
+                    <div class="summary-card">
+                        <h3 class="summary-title">📊 Tu Configuración</h3>
+
+                        <div class="summary-items" id="summary-items">
+                            <div class="empty-summary">Selecciona componentes para comenzar</div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-stats">
+                            <div class="stat-row">
+                                <span class="stat-name">Precio Total:</span>
+                                <span class="stat-value price" id="total-price">0€</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-name">Rendimiento:</span>
+                                <span class="stat-value" id="performance-score">-/10</span>
+                            </div>
+                        </div>
+
+                        <div class="quality-meter">
+                            <div class="meter-header">
+                                <span>Calidad-Precio</span>
+                                <span id="quality-value">0%</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" id="quality-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="meter-labels">
+                                <span>Mala</span>
+                                <span>Excelente</span>
+                            </div>
+                        </div>
+
+                        <div class="performance-preview">
+                            <h4>Rendimiento Estimado</h4>
+                            <div class="game-fps" id="fps-preview">
+                                <div class="fps-item">
+                                    <span class="game-name">Cyberpunk 2077</span>
+                                    <span class="fps-value" id="fps-cyberpunk">- FPS</span>
+                                </div>
+                                <div class="fps-item">
+                                    <span class="game-name">Call of Duty</span>
+                                    <span class="fps-value" id="fps-cod">- FPS</span>
+                                </div>
+                                <div class="fps-item">
+                                    <span class="game-name">Fortnite</span>
+                                    <span class="fps-value" id="fps-fortnite">- FPS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="summary-actions">
+                            <button class="btn btn-primary btn-full" id="btn-buy" disabled>
+                                Comprar Ahora
+                            </button>
+                            <button class="btn btn-secondary btn-full" id="btn-export" disabled>
+                                Exportar PDF
+                            </button>
+                            <button class="btn btn-ghost btn-full" id="btn-reset">
+                                Reiniciar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparador FPS - Funcionalidad Extra -->
+    <section class="fps-comparator" id="fps-comparator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎯 COMPARADOR</span>
+                <h2 class="section-title">Comparador de <span class="gradient-text">FPS</span></h2>
+                <p class="section-subtitle">Simula el rendimiento en tus juegos favoritos. Selecciona resolución y
+                    calidad gráfica.</p>
+            </div>
+
+            <div class="comparator-controls">
+                <div class="control-group">
+                    <label>Resolución</label>
+                    <div class="btn-group" id="resolution-selector">
+                        <button class="btn btn-small active" data-res="1080p">1080p</button>
+                        <button class="btn btn-small" data-res="1440p">1440p</button>
+                        <button class="btn btn-small" data-res="4k">4K</button>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label>Calidad Gráfica</label>
+                    <div class="btn-group" id="quality-selector">
+                        <button class="btn btn-small" data-quality="low">Baja</button>
+                        <button class="btn btn-small active" data-quality="high">Alta</button>
+                        <button class="btn btn-small" data-quality="ultra">Ultra</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fps-chart-container">
+                <div class="chart-header">
+                    <h3>Rendimiento por Build</h3>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color entry"></span>
+                            <span>Starter Nova</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color mid"></span>
+                            <span>Gaming Titan</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color ultra"></span>
+                            <span>Extreme Overlord</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fps-chart" id="fps-chart">
+                    <!-- Generado dinámicamente -->
+                </div>
+            </div>
+
+            <div class="games-grid" id="games-grid">
+                <!-- Generado dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Soporte Técnico con IA Simulada -->
+    <section class="support" id="soporte">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🤖 SOPORTE IA</span>
+                <h2 class="section-title">Asistente <span class="gradient-text">NEXUS AI</span></h2>
+                <p class="section-subtitle">¿No sabes qué componentes elegir? Nuestro asistente virtual te ayuda a
+                    encontrar el build perfecto.</p>
+            </div>
+
+            <div class="ai-chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>¡Hola! Soy <strong>NEXUS AI</strong>, tu asistente de configuración. ¿En qué puedo
+                                ayudarte hoy?</p>
+                            <div class="quick-replies">
+                                <button class="quick-reply" data-query="presupuesto 800 euros">Tengo 800€ de
+                                    presupuesto</button>
+                                <button class="quick-reply" data-query="mejor calidad precio">¿Qué build tiene mejor
+                                    calidad-precio?</button>
+                                <button class="quick-reply" data-query="jugar en 4K">Quiero jugar en 4K</button>
+                                <button class="quick-reply" data-query="streaming y gaming">Necesito PC para
+                                    streaming</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Escribe tu pregunta...">
+                    <button class="btn btn-primary" id="btn-send">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">NEXUS<span class="logo-accent">BUILDS</span></span>
+                    </a>
+                    <p>Construyendo el futuro del gaming, un PC a la vez. Componentes de élite, montaje profesional,
+                        garantía de por vida.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#olimpo">El Olimpo</a></li>
+                        <li><a href="#configurador">Configurador</a></li>
+                        <li><a href="#fps-comparator">Comparador FPS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Garantía</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Estado del Pedido</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>📧 soporte@nexusbuilds.com</p>
+                    <p>📞 +34 900 123 456</p>
+                    <p>📍 Madrid, España</p>
+                    <p>🕐 L-V: 9:00 - 20:00</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexus Builds. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Compra -->
+    <div class="modal" id="buy-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <h2>🎉 ¡Excelente Elección!</h2>
+                <p>Tu configuración está lista para ser enviada a nuestros técnicos.</p>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Contenido dinámico -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btn-continue">Seguir Configurando</button>
+                <button class="btn btn-primary" id="btn-checkout">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/configurator.js"></script>
+    <script src="js/fps-comparator.js"></script>
+    <script src="js/ai-chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
