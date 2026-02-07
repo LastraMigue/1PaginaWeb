@@ -192,6 +192,40 @@ const PC_DATABASE = {
         }
     ],
 
+    // PLACAS BASE
+    motherboard: [
+        {
+            id: 'mobo-1',
+            name: 'Gigabyte B550M DS3H',
+            brand: 'Gigabyte',
+            specs: 'Micro ATX - AM4',
+            price: 99,
+            performance: 6,
+            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=B550M+DS3H&font=orbitron',
+            socket: 'AM4'
+        },
+        {
+            id: 'mobo-2',
+            name: 'MSI MPG Z790 Edge',
+            brand: 'MSI',
+            specs: 'ATX - LGA1700 - WiFi',
+            price: 289,
+            performance: 8,
+            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=MSI+Z790&font=orbitron',
+            socket: 'LGA1700'
+        },
+        {
+            id: 'mobo-3',
+            name: 'ASUS ROG Crosshair X670E',
+            brand: 'ASUS',
+            specs: 'E-ATX - AM5 - Extreme',
+            price: 599,
+            performance: 10,
+            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=ROG+X670E&font=orbitron',
+            socket: 'AM5'
+        }
+    ],
+
     // CAJAS/TORRES
     case: [
         {
@@ -238,6 +272,7 @@ const PREBUILDS = {
             ram: 'ram-1',
             storage: 'storage-1',
             psu: 'psu-1',
+            motherboard: 'mobo-1',
             case: 'case-1'
         }
     },
@@ -250,6 +285,7 @@ const PREBUILDS = {
             ram: 'ram-2',
             storage: 'storage-2',
             psu: 'psu-2',
+            motherboard: 'mobo-2',
             case: 'case-2'
         }
     },
@@ -262,6 +298,7 @@ const PREBUILDS = {
             ram: 'ram-3',
             storage: 'storage-3',
             psu: 'psu-3',
+            motherboard: 'mobo-3',
             case: 'case-3'
         }
     }
