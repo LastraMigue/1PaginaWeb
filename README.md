@@ -4,7 +4,7 @@ Proyecto de una **Single Page Application simulada** para el montaje y venta de 
 
 ---
 
-## Prompt Principal – Desarrollo del Proyecto
+## 1. Prompt Principal – Desarrollo del Proyecto
 
 ### Rol
 Actúa como un **Desarrollador Web Senior (Full Stack)** y **experto en UI/UX**.
@@ -105,7 +105,7 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
 
 ---
 
-## Prompt Secundario – Correcciones y Mejoras
+## 2. Prompt Secundario – Correcciones y Mejoras
 
 ### Problemas Detectados
 
@@ -129,7 +129,7 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
 
 ---
 
-## Prompt Terciario – Ajustes Finales y Reglas de Funcionamiento
+## 3. Prompt Terciario – Ajustes Finales y Reglas de Funcionamiento
 
 ### Gestión de Enlaces
 
@@ -179,7 +179,7 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
 
 ---
 
-## Prompt Cuarto – Gestión de Imágenes
+## 4. Prompt Cuarto – Gestión de Imágenes
 
 ### Origen de las Imágenes
 
@@ -195,3 +195,74 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
 
 - Todas las imágenes deben tener un **tamaño uniforme** acorde al diseño.
 - Deben mantener proporciones correctas (sin deformaciones).
+
+---
+
+## 5. Prompt Quinto – Actualizaciones de Contenido y Placa Base
+
+### Imágenes de Juegos
+- Actualizar las imágenes de:
+  - **VALORANT**
+  - **FORTNITE**
+  - **APEX**
+- Usar las imágenes correspondientes que ya existen en la carpeta `/IMAGENES`.
+
+### Sección Contacto
+Actualizar los datos de contacto con la siguiente información:
+
+- **Correo:** miguelangelkiuren@alumnos.ilerna.com  
+- **Teléfono:** +34 601 76 48 42  
+- **Dirección:** Sevilla, España
+
+### Configurador – Placa Base
+
+- Añadir una nueva categoría obligatoria:
+  - **Placa Base**
+
+- Generar **3 opciones**:
+  - Gama baja
+  - Gama media
+  - Gama alta
+
+- Cada placa base debe incluir:
+  - Imagen
+  - Nombre
+  - Precio
+  - Puntuación de rendimiento
+
+- La placa base debe:
+  - Ser obligatoria para comprar
+  - Ser obligatoria para exportar TXT
+  - Afectar al rendimiento total y a la barra Calidad–Precio
+
+### Equipos Preconfigurados
+
+- Integrar la **Placa Base** en:
+  - Todos los ordenadores preconfigurados
+  - Las listas de especificaciones visibles
+
+---
+
+## 6. Prompt Sexto – Actualización y Ajuste de Imágenes
+
+### Sustitución de Imágenes
+
+- Actualizar nuevamente las imágenes de:
+  - **FORTNITE**
+  - **VALORANT**
+  - **APEX**
+- Usar las imágenes ubicadas en la ruta:
+  - `PaginaWebPC/img`
+
+- Actualizar también las imágenes correspondientes a:
+  - **Placa Base**
+
+- Las imágenes ya cuentan con nombres descriptivos:
+  - Usarlos como referencia directa
+  - Asociarlas correctamente a su contenido
+
+### Ajuste de Tamaño
+
+- Ajustar estas imágenes al **mismo tamaño** que el resto de imágenes de su sección.
+- Mantener proporciones correctas, sin deformaciones.
+- Asegurar coherencia visual dentro de cada sección.

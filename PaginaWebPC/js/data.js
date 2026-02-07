@@ -201,7 +201,7 @@ const PC_DATABASE = {
             specs: 'Micro ATX - AM4',
             price: 99,
             performance: 6,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=B550M+DS3H&font=orbitron',
+            image: 'img/B550M_DS3H.png',
             socket: 'AM4'
         },
         {
@@ -211,7 +211,7 @@ const PC_DATABASE = {
             specs: 'ATX - LGA1700 - WiFi',
             price: 289,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=MSI+Z790&font=orbitron',
+            image: 'img/Z790.png',
             socket: 'LGA1700'
         },
         {
@@ -221,7 +221,7 @@ const PC_DATABASE = {
             specs: 'E-ATX - AM5 - Extreme',
             price: 599,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=ROG+X670E&font=orbitron',
+            image: 'img/X670E.png',
             socket: 'AM5'
         }
     ],
@@ -321,19 +321,19 @@ const GAMES_DATA = [
     {
         id: 'fortnite',
         name: 'Fortnite',
-        image: 'https://placehold.co/400x200/1a1a2e/00ff88?text=Fortnite&font=orbitron',
+        image: 'img/FORTNITE.jpg',
         genre: 'Battle Royale'
     },
     {
         id: 'valorant',
         name: 'Valorant',
-        image: 'https://placehold.co/400x200/1a1a2e/ff0000?text=Valorant&font=orbitron',
+        image: 'img/VALORANT.jpg',
         genre: 'Shooter táctico'
     },
     {
         id: 'apex',
         name: 'Apex Legends',
-        image: 'https://placehold.co/400x200/1a1a2e/ff4444?text=Apex+Legends&font=orbitron',
+        image: 'img/APEX.jpg',
         genre: 'Battle Royale'
     },
     {
