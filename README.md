@@ -205,7 +205,7 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
   - **VALORANT**
   - **FORTNITE**
   - **APEX**
-- Usar las imágenes correspondientes que ya existen en la carpeta `/IMAGENES`.
+- Usar las imágenes correspondientes que ya existen en la carpeta `/img`.
 
 ### Sección Contacto
 Actualizar los datos de contacto con la siguiente información:
