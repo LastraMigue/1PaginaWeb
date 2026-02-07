@@ -176,3 +176,22 @@ Añadir **al menos una funcionalidad extra**, por ejemplo:
     - No debe solaparse con el texto
     - No debe montarse con el título **“Construye tu leyenda”**
     - Debe mantenerse estable en todos los tamaños de pantalla
+
+---
+
+## Prompt Cuarto – Gestión de Imágenes
+
+### Origen de las Imágenes
+
+- Todas las imágenes de la web deben cargarse únicamente desde la carpeta `/img`.
+- No se deben usar placeholders ni enlaces externos.
+
+### Sustitución
+
+- Reemplazar todas las imágenes actuales por las correspondientes dentro de `img`.
+- Usar los nombres de archivo como referencia para asociarlas correctamente.
+
+### Estandarización
+
+- Todas las imágenes deben tener un **tamaño uniforme** acorde al diseño.
+- Deben mantener proporciones correctas (sin deformaciones).

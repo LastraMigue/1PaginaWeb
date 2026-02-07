@@ -10,7 +10,7 @@
     --bg-secondary: #12121a;
     --bg-tertiary: #1a1a25;
     --bg-card: #151520;
-    
+
     /* Acentos neón */
     --neon-cyan: #00d4ff;
     --neon-purple: #b829dd;
@@ -18,26 +18,26 @@
     --neon-orange: #ff6b35;
     --neon-green: #00ff88;
     --neon-yellow: #ffd700;
-    
+
     /* Texto */
     --text-primary: #ffffff;
     --text-secondary: #a0a0b0;
     --text-muted: #6a6a7a;
-    
+
     /* Gradientes */
     --gradient-primary: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
     --gradient-secondary: linear-gradient(135deg, var(--neon-pink), var(--neon-orange));
     --gradient-glow: linear-gradient(135deg, rgba(0, 212, 255, 0.3), rgba(184, 41, 221, 0.3));
-    
+
     /* Sombras */
     --shadow-neon-cyan: 0 0 20px rgba(0, 212, 255, 0.5);
     --shadow-neon-purple: 0 0 20px rgba(184, 41, 221, 0.5);
     --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.5);
-    
+
     /* Tipografía */
     --font-display: 'Orbitron', sans-serif;
     --font-body: 'Rajdhani', sans-serif;
-    
+
     /* Espaciado */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -45,13 +45,13 @@
     --space-lg: 2rem;
     --space-xl: 3rem;
     --space-2xl: 5rem;
-    
+
     /* Bordes */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 20px;
     --radius-full: 9999px;
-    
+
     /* Transiciones */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
@@ -59,7 +59,9 @@
 }
 
 /* Reset y Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -473,7 +475,7 @@ body {
     border: 2px solid rgba(0, 212, 255, 0.3);
     position: relative;
     overflow: hidden;
-    box-shadow: 
+    box-shadow:
         0 0 50px rgba(0, 212, 255, 0.2),
         inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -484,12 +486,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        180deg,
-        transparent 0%,
-        rgba(0, 212, 255, 0.1) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(0, 212, 255, 0.1) 50%,
+            transparent 100%);
     animation: scan 3s linear infinite;
 }
 
@@ -667,7 +667,9 @@ section {
 .build-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
     transition: var(--transition-normal);
 }
 
@@ -872,7 +874,8 @@ section {
 .option-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 5px;
 }
 
 .option-name {
@@ -1673,8 +1676,13 @@ section {
    ANIMACIONES
    ============================================ */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
@@ -1682,6 +1690,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1693,6 +1702,7 @@ section {
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1700,18 +1710,37 @@ section {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
 }
 
 @keyframes glow {
-    0%, 100% { box-shadow: 0 0 5px var(--neon-cyan); }
-    50% { box-shadow: 0 0 20px var(--neon-cyan), 0 0 30px var(--neon-cyan); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px var(--neon-cyan);
+    }
+
+    50% {
+        box-shadow: 0 0 20px var(--neon-cyan), 0 0 30px var(--neon-cyan);
+    }
 }
 
 @keyframes scan {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
 }
 
 /* Scroll reveal */
@@ -1733,12 +1762,12 @@ section {
     .configurator-layout {
         grid-template-columns: 1fr;
     }
-    
+
     .summary-panel {
         position: static;
         order: -1;
     }
-    
+
     .summary-card {
         max-width: 600px;
         margin: 0 auto;
@@ -1751,18 +1780,18 @@ section {
         gap: var(--space-xl);
         padding-top: calc(80px + var(--space-lg));
     }
-    
+
     .hero-content {
         flex: 1;
         max-width: 100%;
     }
-    
+
     .hero-visual {
         margin-left: 0;
         padding-top: 0;
         justify-content: center;
     }
-    
+
     .pc-preview {
         width: 280px;
         height: 350px;
@@ -1773,7 +1802,7 @@ section {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .hero-visual {
         display: none;
     }
@@ -1783,7 +1812,7 @@ section {
     .nav-toggle {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -1799,13 +1828,13 @@ section {
         transform: translateY(-20px);
         transition: var(--transition-normal);
     }
-    
+
     .nav-menu.active {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
-    
+
     .dropdown-menu {
         position: static;
         transform: none;
@@ -1815,47 +1844,47 @@ section {
         box-shadow: none;
         background: var(--bg-tertiary);
     }
-    
+
     .dropdown.active .dropdown-menu {
         display: block;
     }
-    
+
     .builds-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .component-options {
         grid-template-columns: 1fr;
     }
-    
+
     .comparator-controls {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .chart-header {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .chart-legend {
         justify-content: center;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .footer-brand p {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .social-links {
         justify-content: center;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
@@ -1866,25 +1895,25 @@ section {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-cta {
         flex-direction: column;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         gap: var(--space-md);
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .btn-group {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .modal-footer {
         flex-direction: column;
     }

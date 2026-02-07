@@ -13,7 +13,7 @@ const PC_DATABASE = {
             specs: '6 núcleos / 12 hilos - 3.5GHz',
             price: 129,
             performance: 6,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=Ryzen+5+5600&font=orbitron',
+            image: 'img/Ryzen5.png',
             tdp: 65
         },
         {
@@ -23,7 +23,7 @@ const PC_DATABASE = {
             specs: '14 núcleos / 20 hilos - 3.5GHz',
             price: 329,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=i5-14600K&font=orbitron',
+            image: 'img/i5.png',
             tdp: 125
         },
         {
@@ -33,7 +33,7 @@ const PC_DATABASE = {
             specs: '16 núcleos / 32 hilos - 4.2GHz',
             price: 599,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=Ryzen+9+7950X3D&font=orbitron',
+            image: 'img/Ryzen9.png',
             tdp: 120
         }
     ],
@@ -47,7 +47,7 @@ const PC_DATABASE = {
             specs: '8GB GDDR6 - Ray Tracing',
             price: 299,
             performance: 6,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=RTX+4060&font=orbitron',
+            image: 'img/RTX4060.png',
             tdp: 115,
             fps: {
                 '1080p': { low: 120, high: 85, ultra: 65 },
@@ -62,7 +62,7 @@ const PC_DATABASE = {
             specs: '12GB GDDR6X - DLSS 3',
             price: 599,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=RTX+4070+Super&font=orbitron',
+            image: 'img/RTX4070.png',
             tdp: 220,
             fps: {
                 '1080p': { low: 200, high: 150, ultra: 120 },
@@ -77,7 +77,7 @@ const PC_DATABASE = {
             specs: '24GB GDDR6X - Flagship',
             price: 1599,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=RTX+4090&font=orbitron',
+            image: 'img/RTX4090.png',
             tdp: 450,
             fps: {
                 '1080p': { low: 300, high: 250, ultra: 200 },
@@ -96,7 +96,7 @@ const PC_DATABASE = {
             specs: 'DDR4 3200MHz (2x8GB)',
             price: 45,
             performance: 5,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=16GB+DDR4&font=orbitron',
+            image: 'img/Vengeance.png',
             type: 'DDR4'
         },
         {
@@ -106,7 +106,7 @@ const PC_DATABASE = {
             specs: 'DDR5 5600MHz (2x16GB)',
             price: 129,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=32GB+DDR5&font=orbitron',
+            image: 'img/Trident.png',
             type: 'DDR5'
         },
         {
@@ -116,7 +116,7 @@ const PC_DATABASE = {
             specs: 'DDR5 6400MHz (2x32GB)',
             price: 299,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=64GB+DDR5&font=orbitron',
+            image: 'img/Dominator.png',
             type: 'DDR5'
         }
     ],
@@ -130,7 +130,7 @@ const PC_DATABASE = {
             specs: '500GB - 3100 MB/s',
             price: 49,
             performance: 5,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=500GB+NVMe&font=orbitron',
+            image: 'img/Samsung980.png',
             capacity: 500
         },
         {
@@ -140,7 +140,7 @@ const PC_DATABASE = {
             specs: '1TB - 7300 MB/s Gen4',
             price: 89,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=1TB+NVMe+Gen4&font=orbitron',
+            image: 'img/WDBlack.png',
             capacity: 1000
         },
         {
@@ -150,7 +150,7 @@ const PC_DATABASE = {
             specs: '2TB - 7450 MB/s Gen5',
             price: 179,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=2TB+NVMe+Gen5&font=orbitron',
+            image: 'img/Samsung990.png',
             capacity: 2000
         }
     ],
@@ -164,7 +164,7 @@ const PC_DATABASE = {
             specs: '550W - 80+ Bronze',
             price: 49,
             performance: 5,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=550W+Bronze&font=orbitron',
+            image: 'img/CV550.png',
             wattage: 550,
             efficiency: 'bronze'
         },
@@ -175,7 +175,7 @@ const PC_DATABASE = {
             specs: '750W - 80+ Gold',
             price: 99,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=750W+Gold&font=orbitron',
+            image: 'img/EVGA750.png',
             wattage: 750,
             efficiency: 'gold'
         },
@@ -186,7 +186,7 @@ const PC_DATABASE = {
             specs: '1000W - 80+ Titanium',
             price: 249,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=1000W+Titanium&font=orbitron',
+            image: 'img/AX1000.png',
             wattage: 1000,
             efficiency: 'titanium'
         }
@@ -201,7 +201,7 @@ const PC_DATABASE = {
             specs: 'Mid Tower - Cristal Templado',
             price: 79,
             performance: 6,
-            image: 'https://placehold.co/300x200/1a1a2e/00ff88?text=NZXT+H510&font=orbitron',
+            image: 'img/H510.png',
             size: 'mid-tower'
         },
         {
@@ -211,7 +211,7 @@ const PC_DATABASE = {
             specs: 'Mid Tower - Doble Cámara',
             price: 149,
             performance: 8,
-            image: 'https://placehold.co/300x200/1a1a2e/ff6b35?text=O11+Dynamic&font=orbitron',
+            image: 'img/O11D.png',
             size: 'mid-tower'
         },
         {
@@ -221,7 +221,7 @@ const PC_DATABASE = {
             specs: 'Full Tower - Airflow Max',
             price: 249,
             performance: 10,
-            image: 'https://placehold.co/300x200/1a1a2e/ff00ff?text=7000D&font=orbitron',
+            image: 'img/7000D.png',
             size: 'full-tower'
         }
     ]
@@ -272,13 +272,13 @@ const GAMES_DATA = [
     {
         id: 'cyberpunk',
         name: 'Cyberpunk 2077',
-        image: 'https://placehold.co/400x200/1a1a2e/ff00ff?text=Cyberpunk+2077&font=orbitron',
+        image: 'img/Cyberpunk.jpg',
         genre: 'RPG de mundo abierto'
     },
     {
         id: 'cod',
         name: 'Call of Duty: Black Ops 6',
-        image: 'https://placehold.co/400x200/1a1a2e/ff6b35?text=Call+of+Duty+BO6&font=orbitron',
+        image: 'img/COD.jpg',
         genre: 'Shooter FPS'
     },
     {
@@ -302,7 +302,7 @@ const GAMES_DATA = [
     {
         id: 'rdr2',
         name: 'Red Dead Redemption 2',
-        image: 'https://placehold.co/400x200/1a1a2e/ff4444?text=RDR2&font=orbitron',
+        image: 'img/RDR2.jpg',
         genre: 'Aventura western'
     }
 ];
@@ -390,7 +390,7 @@ function calculateBuildPrice(componentIds) {
 function calculateBuildPerformance(componentIds) {
     let totalPerformance = 0;
     let count = 0;
-    
+
     for (const [category, id] of Object.entries(componentIds)) {
         const component = getComponentById(category, id);
         if (component && component.performance) {
@@ -400,7 +400,7 @@ function calculateBuildPerformance(componentIds) {
             count += weight;
         }
     }
-    
+
     return count > 0 ? (totalPerformance / count).toFixed(1) : 0;
 }
 
@@ -408,9 +408,9 @@ function calculateBuildPerformance(componentIds) {
 function calculateValueScore(componentIds) {
     const totalPrice = calculateBuildPrice(componentIds);
     const performance = parseFloat(calculateBuildPerformance(componentIds));
-    
+
     if (totalPrice === 0) return 0;
-    
+
     // Fórmula: (rendimiento / precio) * factor de escala
     // Un build de 750€ con rendimiento 6 = 90% calidad-precio
     const valueRatio = (performance / totalPrice) * 1000;
